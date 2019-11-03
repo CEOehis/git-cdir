@@ -1,22 +1,22 @@
-# git-cd
+# git-cdir
 
-Use `git-cd` to clone a repository and change directory in one fell swoop!
+Use `git-cdir` to clone a repository and change directory in one fell swoop!
 
 ## Usage
 
 ```sh
-git-cd <repo-url> [<dir>]
+git-cdir <repo-url> [<dir>]
 ```
 
 ## Examples
 
 ```sh
-$ git-cd https://github.com/CEOehis/git-cd
-# clones https://github.com/CEOehis/git-cd into a directory named `git-cd`
-# and changes the working directory to `git-cd`
+$ git-cdir https://github.com/CEOehis/git-cdir
+# clones https://github.com/CEOehis/git-cdir into a directory named `git-cdir`
+# and changes the working directory to `git-cdir`
 
-$ git-cd https://github.com/CEOehis/git-cd local-dir
-# clones https://github.com/CEOehis/git-cd into a directory named `local-dir`
+$ git-cdir https://github.com/CEOehis/git-cdir local-dir
+# clones https://github.com/CEOehis/git-cdir into a directory named `local-dir`
 # and changes the working directory to `local-dir`
 ```
 
@@ -25,7 +25,7 @@ $ git-cd https://github.com/CEOehis/git-cd local-dir
 ### NPM
 
 ```sh
-npm install --global git-cd
+npm install --global git-cdir
 ```
 
 ## License
