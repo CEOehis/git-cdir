@@ -1,0 +1,23 @@
+{
+  "name": "git-cd",
+  "version": "0.1.0",
+  "description": "Clone a repository and change directory in one fell swoop",
+  "bin": {
+    "git-cd": "git-cd"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CEOehis/git-cd.git"
+  },
+  "keywords": [
+    "github",
+    "cli",
+    "utility"
+  ],
+  "author": "Celestine Ekoh-Ordan",
+  "license": "MIT",
+  "homepage": "https://github.com/CEOehis/git-cd#readme"
+}

@@ -1,0 +1,36 @@
+#!/usr/bin/env bash
+
+echo "Initializing git clone $1"
+# check number of arguments
+if [ $# -lt 1 ]; then
+  echo "Too few arguments."
+  echo ""
+  echo "Usage clone_repo <repo_url> [<dir>]"
+  exit 1
+fi
+
+if [ $# -gt 2 ]; then
+  echo "Too many arguments."
+  echo ""
+  echo "Usage clone_repo <repo_url> [<dir>]"
+  exit 1
+fi
+# attempt git clone and return if unsuccessful
+git clone $1 $2
+if [ $? -ne 0 ]; then
+  echo "failed to clone"
+  exit 1
+fi
+# cd into provided directory
+if [ $2 ]; then
+  echo "Changed directory to $2"
+  cd $2
+  exit 0
+fi
+# parse filepath and change directory to repo directory
+basename=$(basename $1)
+repo_name=${basename%.*}
+echo "Changed directory to $1"
+cd $repo_name
+
+exec $(which $SHELL)
