@@ -1,6 +1,6 @@
 {
   "name": "git-cdir",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Clone a repository and change directory in one fell swoop",
   "bin": {
     "git-cdir": "git-cdir"

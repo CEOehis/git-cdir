@@ -25,6 +25,7 @@ fi
 if [ $2 ]; then
   echo "Changed directory to $2"
   cd $2
+  exec $(which $SHELL)
   exit 0
 fi
 # parse filepath and change directory to repo directory
