@@ -1,5 +1,7 @@
 # git-cd
 
+Use `git-cd` to clone a repository and change directory in one fell swoop!
+
 ## Usage
 
 ```sh
